@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid;
+    font-family: Verdana ;
+}
+body{
+    background: linear-gradient(126deg,rgb(101, 215, 195),rgb(120, 201, 244));
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;;
+}
+button{
+    padding: 10px;
+    font-size: 2rem;
+    font-family: verdana;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    border-bottom: 5px solid white;
+}
+button:hover{
+    background-color: white;
+    border-bottom: 5px solid black;
+    color: black;
+}
+.toast-box{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    color: black;
+    top: 10px;
+    right: 30px;
+    width: 28%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid ;
+    overflow: hidden;
+}
+.toast{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.toast-box #success-icon{
+    font-size: 1.5rem;
+    color: green;
+}
+.toast-box #error{
+    font-size: 1.5rem;
+    color: red;
+}
+.toast-box #invalid{
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+span{
+    font-size: 1rem;
+    font-weight: 600;
+}
